@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="base-eureka" />
+        <module name="base-common" />
+        <module name="base-service-text-api" />
+        <module name="base-servic-text" />
+        <module name="base-common-db" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base-common" target="1.8" />
+      <module name="base-common-db" target="1.8" />
+      <module name="base-eureka" target="1.8" />
+      <module name="base-gateway" target="1.8" />
+      <module name="base-parent" target="1.8" />
+      <module name="base-servic-text" target="1.8" />
+      <module name="base-service" target="1.8" />
+      <module name="base-service-api" target="1.8" />
+      <module name="base-service-text-api" target="1.8" />
+      <module name="base-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base-common" options="-parameters" />
+      <module name="base-common-db" options="-parameters" />
+      <module name="base-eureka" options="-parameters" />
+      <module name="base-gateway" options="-parameters" />
+      <module name="base-servic-text" options="-parameters" />
+      <module name="base-service" options="-parameters" />
+      <module name="base-service-api" options="-parameters" />
+      <module name="base-service-text-api" options="-parameters" />
+      <module name="base-web" options="-parameters" />
+    </option>
+  </component>
+</project>
