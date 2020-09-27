@@ -3,11 +3,19 @@ import Vue from 'vue';
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import 'ant-design-vue/dist/antd.css';
+
 Vue.use(Antd);
 
 //lodash
 import _ from 'lodash'
+
 Vue.prototype._ = _
 
+//jquery
+import $ from "jquery"
+
+Vue.prototype.$ = $
+
+import '@assets/icon/index.js'
 
 

@@ -26,21 +26,23 @@ module.exports = {
             .set('@views', resolve('src/views'))
             .set('@layout', resolve('src/layout'))
 
-        const svgRule = config.module.rule('svg')
-        svgRule.uses.clear()
-        svgRule
-            .oneOf('inline')
-            .resourceQuery(/inline/)
-            .use('vue-svg-icon-loader')
-            .loader('vue-svg-icon-loader')
+        config.module
+            .rule("svg")
+            .exclude.add(resolve("src/assets/icon/svg"))
+            .end();
+        // 第二步：使用svg-sprite-loader 对 src/assets/imgs/svgs下的svg进行操作
+        config.module
+            .rule("icons")
+            .test(/\.svg$/)
+            .include.add(resolve("src/assets/icon/svg"))
             .end()
-            .end()
-            .oneOf('external')
-            .use('file-loader')
-            .loader('file-loader')
+            .use("svg-sprite-loader")
+            .loader("svg-sprite-loader")
+            //定义规则 使用时 <svg class="icon"> <use xlink:href="#icon-svg文件名"></use>  </svg>
             .options({
-                name: 'assets/[name].[hash:8].[ext]'
+                symbolId: "icon-[name]"
             })
+            .end();
     },
 
 
