@@ -70,7 +70,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/base-parent/base-service-api/base-service-text-api/src/main/java/com/zyc/base/pojo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,7 +80,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -161,6 +161,7 @@
       <workItem from="1600870924874" duration="136000" />
       <workItem from="1600871267726" duration="5735000" />
       <workItem from="1600878277336" duration="4804000" />
+      <workItem from="1601257632645" duration="1128000" />
     </task>
     <task id="LOCAL-00001" summary="用tk插件生成查询和根据id查询测试代码">
       <created>1600879631538</created>
@@ -265,10 +266,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600871779917" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1600996622658">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="338" y="0" key="SettingsEditor" timestamp="1601257770563">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1600996622658" />
+    <state x="338" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601257770563" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600914239092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
