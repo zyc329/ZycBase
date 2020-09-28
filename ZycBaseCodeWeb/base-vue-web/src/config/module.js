@@ -3,6 +3,7 @@ import Vue from 'vue';
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import 'ant-design-vue/dist/antd.css';
+import config from '@/config/defaultSettings'
 
 Vue.use(Antd);
 //lodash
@@ -16,12 +17,7 @@ Vue.prototype.$ = $
 // vue-ls
 import Storage from 'vue-ls';
 
-options = {
-    namespace: 'pro__', // key键前缀
-    name: 'ls', // 命名Vue变量.[ls]或this.[$ls],
-    storage: 'local', // 存储名称: session, local, memory
-};
-Vue.use(Storage, options);
+Vue.use(Storage, config.storageOptions);
 
 //svg
 import '@assets/icon/index.js'
