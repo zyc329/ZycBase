@@ -1,6 +1,6 @@
 import request from '@/utils/request' // 引入封装好的 axios 请求
 const userApi = {
-    demo: '/demo/text',
+    demo: '/text',
     Login: '/auth/login',
     Logout: '/auth/logout',
     ForgePassword: '/auth/forge-password',
@@ -14,9 +14,10 @@ const userApi = {
 }
 
 export function loginText(params) { // 测试
+    debugger
     return request({
         url: userApi.demo,
-        method: 'post',
+        method: 'get',
         headers: {
             'Content-Type': 'application/json;charset=UTF-8'
         },

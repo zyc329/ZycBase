@@ -48,6 +48,7 @@
 </template>
 
 <script>
+    import md5 from 'md5'
     import {timeFix} from '@/utils/util'
     import { mapActions } from 'vuex'
     import LoginFooter from "@views/system/modules/LoginFooter";
@@ -87,7 +88,19 @@
         },
         methods: {
             ...mapActions(['Login', 'Logout']),
+            //技术密码
+            rememberPasswordTreat () {
+                if (this.isRememberPassword.isFlag) {
+                    this.isRememberPassword.name = this.form.getFieldValue('account')
+                    this.isRememberPassword.password = this.form.getFieldValue('password')
+                } else {
+                    this.isRememberPassword.name = ''
+                    this.isRememberPassword.password = ''
+                }
+                localStorage.setItem('isRememberPassword', JSON.stringify(this.isRememberPassword))
+            },
             handleSubmit(e) {
+                this.rememberPasswordTreat()
                 e.preventDefault()
                 const {form: {validateFields},Login} = this
                 this.loginBtn = true
@@ -110,6 +123,7 @@
                 })
             },
             loginSuccess(res) {
+                console.log(res)
                 if (res.data.role==='admin'){
                     this.$router.push({path: '/'})
                     // 延迟 1 秒显示欢迎信息
