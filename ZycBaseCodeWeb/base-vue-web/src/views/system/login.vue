@@ -74,7 +74,7 @@
                 if (isRememberPassword.isFlag) {
                     this.isRememberPassword = isRememberPassword
                     this.form.setFieldsValue({
-                        'account': isRememberPassword.name,
+                        'name': isRememberPassword.name,
                         'password': isRememberPassword.password
                     })
                 } else {
@@ -88,10 +88,10 @@
         },
         methods: {
             ...mapActions(['Login', 'Logout']),
-            //技术密码
+            //记住密码
             rememberPasswordTreat () {
                 if (this.isRememberPassword.isFlag) {
-                    this.isRememberPassword.name = this.form.getFieldValue('account')
+                    this.isRememberPassword.name = this.form.getFieldValue('name')
                     this.isRememberPassword.password = this.form.getFieldValue('password')
                 } else {
                     this.isRememberPassword.name = ''
@@ -138,10 +138,10 @@
                 }
             },
             requestFailed(err) {
-                this.$notification.error({
-                    message: '提示',
-                    description: `请检查您的账号密码是否正确`
-                })
+                // this.$notification.error({
+                //     message: '提示',
+                //     description: `请检查您的账号密码是否正确`
+                // })
                 this.$notification['error']({
                     message: '错误',
                     description: ((err.response || {}).data || {}).message || '请求出现错误，请稍后再试',

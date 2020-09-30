@@ -7,7 +7,8 @@ const routes = [
   {
     path: "/",
     name: "login",
-    component:() => import('@/views/system/login')
+    component:() => import('@/views/system/login'),
+    meta: { title: 'menu.dashboard', keepAlive: true, icon: bxAnaalyse, permission: [ 'dashboard' ] },
   }
 ];
 
