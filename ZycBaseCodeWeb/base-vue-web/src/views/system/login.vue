@@ -43,7 +43,7 @@
                 </a-form-item>
             </a-form>
         </div>
-        <login-footer></login-footer>
+        <login-foote></login-foote>
     </div>
 </template>
 
@@ -67,9 +67,9 @@
             }
         },
         mounted() {
-            if (localStorage.getItem('isRememberPassword') === null || localStorage.getItem('isRememberPassword') === undefined) {
+            if (localStorage.getItem('isRememberPassword') === null || localStorage.getItem('isRememberPassword')  === undefined) {
                 localStorage.setItem('isRememberPassword', JSON.stringify(this.isRememberPassword))
-            } else {
+10           } else {
                 let isRememberPassword = JSON.parse(localStorage.getItem('isRememberPassword'))
                 if (isRememberPassword.isFlag) {
                     this.isRememberPassword = isRememberPassword
@@ -109,8 +109,8 @@
                         const loginParams = {...values}
                         loginParams.name = values.name
                         loginParams.password = md5(values.password)
-                        Login(loginParams)
-                            .then((res) => this.loginSuccess(res))
+                       Login(loginParams)
+                         .then((res) => this.loginSuccess(res))
                             .catch(err => this.requestFailed(err))
                             .finally(() => {
                                 this.loginBtn = false

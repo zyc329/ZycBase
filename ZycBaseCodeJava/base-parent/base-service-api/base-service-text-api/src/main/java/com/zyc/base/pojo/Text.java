@@ -18,7 +18,7 @@ public class Text {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id;
+    private String id;
 
     @ApiModelProperty(value = "测试名称", required = false)
     @Column(name = "text_name")
