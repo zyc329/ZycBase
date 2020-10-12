@@ -6,10 +6,15 @@
 
 <script>
   export default {
-    name: 'zyc-base-code-desk'
+    name: 'financial'
   }
 </script>
 
-<style>
+<style scoped>
   /* CSS */
+  #app{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 </style>

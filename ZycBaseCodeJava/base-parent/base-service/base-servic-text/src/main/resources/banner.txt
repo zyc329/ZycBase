@@ -1,0 +1,18 @@
+
+
+ZZZZZZZZZZZZZZZZZZZYYYYYYY       YYYYYYY       CCCCCCCCCCCCC
+Z:::::::::::::::::ZY:::::Y       Y:::::Y    CCC::::::::::::C
+Z:::::::::::::::::ZY:::::Y       Y:::::Y  CC:::::::::::::::C
+Z:::ZZZZZZZZ:::::Z Y::::::Y     Y::::::Y C:::::CCCCCCCC::::C
+ZZZZZ     Z:::::Z  YYY:::::Y   Y:::::YYYC:::::C       CCCCCC
+        Z:::::Z       Y:::::Y Y:::::Y  C:::::C
+       Z:::::Z         Y:::::Y:::::Y   C:::::C
+      Z:::::Z           Y:::::::::Y    C:::::C
+     Z:::::Z             Y:::::::Y     C:::::C
+    Z:::::Z               Y:::::Y      C:::::C
+   Z:::::Z                Y:::::Y      C:::::C
+ZZZ:::::Z     ZZZZZ       Y:::::Y       C:::::C       CCCCCC
+Z::::::ZZZZZZZZ:::Z       Y:::::Y        C:::::CCCCCCCC::::C
+Z:::::::::::::::::Z    YYYY:::::YYYY      CC:::::::::::::::C
+Z:::::::::::::::::Z    Y:::::::::::Y        CCC::::::::::::C
+ZZZZZZZZZZZZZZZZZZZ    YYYYYYYYYYYYY           CCCCCCCCCCCCC
