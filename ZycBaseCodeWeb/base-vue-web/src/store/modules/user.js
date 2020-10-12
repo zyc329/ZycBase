@@ -36,7 +36,6 @@ const user = {
         // 登录
         Login({commit}, userInfo) {
             return new Promise((resolve, reject) => {
-                debugger
                 loginText(userInfo).then(response => {
                     const result = response.data
                     storage.set(ACCESS_TOKEN, result.token, 7 * 24 * 60 * 60 * 1000)

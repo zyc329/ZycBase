@@ -3,10 +3,7 @@ import axios from 'axios'
 import store from '@/store'
 import nprogress from './nprogress'
 import notification from 'ant-design-vue/es/notification'
-import qs from 'qs'
-import {
-    ACCESS_TOKEN
-} from '@/store/mutation-types'
+import storage from 'store'
 
 notification.config({
     placement: 'bottomRight'
@@ -34,7 +31,7 @@ const err = (error)=>{
     }
 
     const data =error.response.data
-    const token = Vue.ls.get(ACCESS_TOKEN)
+    const token = storage.get('ACCESS_TOKEN')
 }
 
 
